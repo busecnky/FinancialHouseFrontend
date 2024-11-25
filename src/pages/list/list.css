@@ -1,0 +1,39 @@
+.list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.list-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-form label {
+    margin-bottom: 2px;
+}
+
+.list-form input,
+.list-form select,
+.list-form button {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.list-form button {
+    background-color: #007afd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+

@@ -1,0 +1,37 @@
+.clients-main{
+    margin: 0;
+    position: sticky; top: 0;
+}
+
+.clients-header{
+    position: sticky; top: 0;
+}
+.clients-body{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.clients-h1{
+    text-align: center;
+}
+
+.clients-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+img{
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+.link{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #647278;
+    font-size: 1.4rem;
+}

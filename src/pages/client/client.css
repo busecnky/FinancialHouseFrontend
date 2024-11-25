@@ -1,0 +1,47 @@
+.client-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.client-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.client-form input {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.client-form button {
+    padding: 10px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.client-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.customer-info {
+    font-size: 16px;
+    margin-top: 20px;
+    color: green;
+}
