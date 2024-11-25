@@ -21,7 +21,7 @@ This project is a frontend application integrated with the [Backend API](https:/
 1. Clone the repository:
 
    ```bash
-   git clone [<Frontend GitHub Link>](https://github.com/busecnky/FinancialHouseFrontent.git)
+   git clone https://github.com/busecnky/FinancialHouseFrontent.git
    cd FinancialHouseFrontend
 
 2. Install dependencies
