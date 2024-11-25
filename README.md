@@ -25,27 +25,31 @@ This project is a frontend application integrated with the [Backend API](https:/
    cd FinancialHouseFrontend
 
 2. Install dependencies
+   ```bash
    npm install
 
-3.Start the application:
-    npm run dev
-The application will run at http://localhost:5173.
+3. Start the application:
+   ```bash
+   npm run dev
+
+- The application will run at http://localhost:5173.
 
 
 
-This section explains the importance of setting up the proxy to avoid CORS errors while developing locally. It also provides a pointer to backend CORS handling for production environments.
+### This section explains the importance of setting up the proxy to avoid CORS errors while developing locally. It also provides a pointer to backend CORS handling for production environments.
 
-
-1.To work with the backend API and avoid CORS (Cross-Origin Resource Sharing) issues, I use a proxy.  I added the line in package.json file to set up the proxy:
+1. To work with the backend API and avoid CORS (Cross-Origin Resource Sharing) issues, I use a proxy.  I added the line in package.json file to set up the proxy:
      "proxy": "http://localhost:8081"
 
-2.Creating a new project for the Node.js proxy server, independent of your React project.
-  mkdir react-proxy-server
-  cd react-proxy-server
-  npm init -y
-  npm install express http-proxy-middleware cors
+2. Creating a new project for the Node.js proxy server, independent of your React project.
+   ```bash
+     mkdir react-proxy-server
+     cd react-proxy-server
+     npm init -y
+     npm install express http-proxy-middleware cors
 
 3. Create a new app.js file and add the proxy middleware code:
+   ```bash
     const express = require('express');
     const cors = require('cors');
     const { createProxyMiddleware } = require('http-proxy-middleware');
@@ -69,7 +73,8 @@ This section explains the importance of setting up the proxy to avoid CORS error
       console.log('Proxy server is running on http://localhost:8081');
     });
 
-4. Run Node.js proxy server:
+5. Run Node.js proxy server:
+   ```bash
     cd react-proxy-server
     node app.js
 
